@@ -1,0 +1,20 @@
+{
+  "name": "manthan-codex-skills",
+  "interface": {
+    "displayName": "Manthan Codex Skills"
+  },
+  "plugins": [
+    {
+      "name": "dsa-ai-coach",
+      "source": {
+        "source": "local",
+        "path": "./plugins/dsa-ai-coach"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education"
+    }
+  ]
+}
