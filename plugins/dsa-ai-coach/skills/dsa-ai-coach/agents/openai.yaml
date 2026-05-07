@@ -1,0 +1,4 @@
+interface:
+  display_name: "DSA AI Coach"
+  short_description: "Personalized DSA tutor for job-switch prep"
+  default_prompt: "Use $dsa-ai-coach to teach me the next DSA topic without giving full solutions first."
