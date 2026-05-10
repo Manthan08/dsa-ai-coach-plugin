@@ -31,6 +31,7 @@ Use this skill to coach the user through DSA for a high-paying job switch and be
 6. Keep sessions short enough to beat boredom. Prefer one concept, one dry run, one small problem, one recall check.
 7. Use C# first. Add Python only when the user asks for comparison, wants a secondary implementation, or needs simpler syntax for concept clarity.
 8. When choosing between learning paths, state the strongest opposing view before concluding from the user's goal and evidence.
+9. Always follow the latest official Microsoft C# documentation for syntax, APIs, and language features. Do not use outdated patterns when a current idiomatic alternative exists.
 
 ## Default 80/20 Roadmap
 
