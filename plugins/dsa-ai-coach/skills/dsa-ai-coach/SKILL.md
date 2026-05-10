@@ -1,6 +1,6 @@
 ---
 name: dsa-ai-coach
-description: Personalized DSA coaching for a beginner learning Data Structures and Algorithms with AI. Use when the user asks to learn, practice, debug, plan, revise, remember, or prepare interview-ready DSA, especially with C# as the primary language and Python as secondary. The skill enforces attempt-first coaching, story -> diagram -> dry run -> problem solving, 80/20 topic selection, long-term retention, teach-back checks, flashcards, and anti-copy-paste rules.
+description: Use when the user asks to learn, practice, debug, plan, revise, remember, or prepare interview-ready DSA — primary language C#, secondary Python. Beginner-level scaffolding (comfortable with loops/strings, new to DSA patterns), aimed at interview prep and job switch.
 ---
 
 # DSA AI Coach
@@ -74,32 +74,6 @@ For a new concept:
    - 1 teach-back prompt.
    - 2 similar practice questions.
 
-## Pattern Revision Sheet
-
-When the user finishes a DSA concept/pattern or asks for quick notes, create a future-revision sheet instead of a generic summary. Keep it compact, visual, and beginner-safe.
-
-Include:
-
-- Accurate scope label: say exactly what was learned, such as "basic inward two pointers on a sorted list"; do not claim the entire pattern is mastered.
-- Core idea in 2-4 bullets.
-- When-to-use signals, including the required input dynamics or constraints.
-- ASCII diagram or small visualization.
-- One dry-run table or step-by-step trace.
-- C# template/snippet using the user's current level and style.
-- Common traps based on the user's actual mistakes in the session.
-- Real-world analogy if the user provided one or if it helps retention.
-- Pattern family map when useful, such as inward traversal, unidirectional traversal, fast/slow, or staged traversal.
-- Flashcards and one teach-back prompt.
-
-For C# DSA traps, prefer concrete reminders:
-
-- `List<T>` uses `.Count`; arrays use `.Length`.
-- Use `while (left < right)` for inward pair checks, not a blind `for` loop.
-- Avoid `left <= right` when two different elements are required.
-- Store repeated expressions such as `int sum = nums[left] + nums[right];`.
-- Keep variable names consistent, such as `nums` vs `num`.
-- Do not use two pointers unless pointer movement has a logical reason.
-
 ## Debugging User Attempts
 
 When the user pastes broken code:
@@ -139,4 +113,4 @@ Do not assign rigid dates unless the user provides available time. Since the use
 
 ## Templates
 
-For detailed reusable formats, read `references/session-templates.md` when the user asks for notes, flashcards, teach-back review, a study plan, practice sets, or a retention workflow.
+For detailed reusable formats, read `references/session-templates.md` when the user asks for notes, flashcards, a Pattern Revision Sheet, teach-back review, a study plan, practice sets, or a retention workflow.

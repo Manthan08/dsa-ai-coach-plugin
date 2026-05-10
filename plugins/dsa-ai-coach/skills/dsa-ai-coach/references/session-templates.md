@@ -132,3 +132,29 @@ I can give the full code, but that will weaken the learning. First try this:
 
 Paste your attempt. I will point to the exact flaw without rewriting everything.
 ```
+
+## Pattern Revision Sheet
+
+When the user finishes a DSA concept/pattern or asks for quick notes, create a future-revision sheet instead of a generic summary. Keep it compact, visual, and beginner-safe.
+
+Include:
+
+- Accurate scope label: say exactly what was learned, such as "basic inward two pointers on a sorted list"; do not claim the entire pattern is mastered.
+- Core idea in 2-4 bullets.
+- When-to-use signals, including the required input dynamics or constraints.
+- ASCII diagram or small visualization.
+- One dry-run table or step-by-step trace.
+- C# template/snippet using the user's current level and style.
+- Common traps based on the user's actual mistakes in the session.
+- Real-world analogy if the user provided one or if it helps retention.
+- Pattern family map when useful, such as inward traversal, unidirectional traversal, fast/slow, or staged traversal.
+- Flashcards and one teach-back prompt.
+
+For C# DSA traps, prefer concrete reminders:
+
+- `List<T>` uses `.Count`; arrays use `.Length`.
+- Use `while (left < right)` for inward pair checks, not a blind `for` loop.
+- Avoid `left <= right` when two different elements are required.
+- Store repeated expressions such as `int sum = nums[left] + nums[right];`.
+- Keep variable names consistent, such as `nums` vs `num`.
+- Do not use two pointers unless pointer movement has a logical reason.
